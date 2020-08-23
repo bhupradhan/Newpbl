@@ -17,7 +17,7 @@ require 'includes/dbh.inc.php';
 <?php
 
 
-if(isset($_SESSION['muserId'])){
+if(isset($_SESSION['userId'])){
 	$siteid = $row['siteid'];
 
 $sql = "SELECT * FROM prop where siteid='".$siteid."'";

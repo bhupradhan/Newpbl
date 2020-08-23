@@ -25,11 +25,11 @@ require 'header.php';
   </datalist><br><br>
 
 		
-		<input type="text" name="quan" placeholder="Enter quantity"><br><br>
-		<input type="text" name="brand" placeholder="Enter brand"><br><br>
-		<input type="text" name="username" placeholder="Enter username"><br><br>
-		<input type="text" name="siteid" placeholder="Enter siteid"><br><br>
-		<input type="text" name="sitename" placeholder="Enter sitename"><br><br>
+		<input type="text" name="quan" placeholder="Enter quantity" required autocomplete= off><br><br>
+		<input type="text" name="brand" placeholder="Enter brand" required autocomplete= off><br><br>
+		<input type="text" name="username" placeholder="Enter username" required autocomplete= off><br><br>
+		<input type="text" name="siteid" placeholder="Enter siteid" required autocomplete= off><br><br>
+		<input type="text" name="sitename" placeholder="Enter sitename" required autocomplete= off><br><br>
 		<input type="submit" name="sorder">
 
 

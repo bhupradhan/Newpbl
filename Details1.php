@@ -7,7 +7,7 @@ require "includes/dbh.inc.php";
 
 <?php
 
-if(isset($_SESSION['ouserId'])){
+if(isset($_SESSION['userId'])){
 $sql = "SELECT * FROM prop ";
 	 
 

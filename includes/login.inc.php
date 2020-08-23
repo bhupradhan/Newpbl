@@ -46,11 +46,42 @@ if(isset($_POST['login-submit'])){
 				session_start();
 				$_SESSION['userId'] = $row['idUsers'];
 				$_SESSION['userUid'] = $row['uidUsers'];
-				//$_SESSION['result'] = $result;
+				
+				$sql = "SELECT * FROM users WHERE idUsers='".$_SESSION['userId']."'";
+				$result = mysqli_query($conn, $sql);
+				$resultCheck = mysqli_num_rows($result);
+				$row=mysqli_fetch_array($result);
 
 
-				header("Location: ../index.php?login=success");
-				exit();
+
+				$category = $row[6];
+				if($category== 'user'){
+
+					header("Location: ../user.php?login=success");
+							exit();
+				}
+				if($category== 'owner'){
+
+					header("Location: ../owner.php?login=success");
+					exit();
+				}
+				if($category== 'manager'){
+
+					header("Location: ../manager.php?login=success");
+					exit();
+				}
+
+
+
+
+
+
+
+
+
+
+
+				
 
 
 				}

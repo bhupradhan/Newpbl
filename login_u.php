@@ -14,8 +14,8 @@
 				</div>
 			<form action="includes/login.inc.php" method="POST">
 				<!--<label for="name">Name :</label><input type="text" name="name" placeholder="Enter your name"><br><br>-->
-				<label for="mailid">Email :</label><input type="email" name="mailuid" placeholder="Enter your email"><br><br>
-				<label for="pwd">Password :</label><input type="password" name="pwd" placeholder="Enter your password"><br><br><br>
+				<label for="mailid">Email :</label><input type="email" name="mailuid" placeholder="Enter your email" required autocomplete=off><br><br>
+				<label for="pwd">Password :</label><input type="password" name="pwd" placeholder="Enter your password" required><br><br><br>
 				<input type="submit" name="login-submit"> 
 
 		<?php
